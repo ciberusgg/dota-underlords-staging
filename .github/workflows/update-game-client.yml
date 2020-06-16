@@ -29,13 +29,11 @@ jobs:
         name: Update game client & push
         with:
           pal-repo-token: ${{ secrets.REPOSITORY_GITHUB_TOKEN }}
-          pal-repo-name: ciberusps/game-clients-tracking@refs/heads/master
+          # IN PROD MUST BE refs/heads/master
+          pal-repo-name: ciberusps/game-clients-tracking@refs/heads/development
           pal-action-directory: ./.github/actions/update/
           steam-game-id: ${{ secrets.STEAM_GAME_ID }}
           steam-account-nickname: ${{ secrets.STEAM_ACCOUNT_NICKNAME }}
           steam-account-password: ${{ secrets.STEAM_ACCOUNT_PASSWORD }}
           bunny-cdn-api-key: ${{ secrets.BUNNY_CDN_API_KEY }}
           firebase-service-account: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-
-      - name: Get the output
-        run: echo "The output was ${{ steps.hello.outputs }}"

@@ -69,4 +69,4 @@
 *.otf filter=lfs diff=lfs merge=lfs eol=lf -text
 *.ttf filter=lfs diff=lfs merge=lfs eol=lf -text
 *.uifont filter=lfs diff=lfs merge=lfs eol=lf -text
-# *.ttf filter=lfs diff=lfs merge=lfs eol=lf -text
+*.ttf filter=lfs diff=lfs merge=lfs eol=lf -text

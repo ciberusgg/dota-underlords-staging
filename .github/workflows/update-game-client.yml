@@ -2,36 +2,32 @@ name: Update game client
 
 on:
   push:
-    branches:
-      - master
+    paths:
+      - "update-action-version.txt"
 
 jobs:
   update:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Prepare Git - login, disable crlf
-        id: fruit
-        run: |
-          git config --global user.email "ciberus.ps@gmail.com"
-          git config --global user.name "Ciberusps"
-          git config --global core.autocrlf false
-
-      - uses: actions/checkout@v2
-
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
           node-version: "12.x"
+
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.REPOSITORY_GITHUB_TOKEN }}
 
       - uses: invisionapp/private-action-loader@v3
         id: output_example
         name: Update game client & push
         with:
           pal-repo-token: ${{ secrets.REPOSITORY_GITHUB_TOKEN }}
-          # IN PROD MUST BE refs/heads/master
-          pal-repo-name: ciberusps/game-clients-tracking@refs/heads/development
+          # IN PROD MUST BE refs/remotes/origin/master
+          pal-repo-name: ciberusps/game-clients-tracking@refs/remotes/origin/development
           pal-action-directory: ./.github/actions/update/
+          repository: ${{ github.repository }}
           steam-game-id: ${{ secrets.STEAM_GAME_ID }}
           steam-account-nickname: ${{ secrets.STEAM_ACCOUNT_NICKNAME }}
           steam-account-password: ${{ secrets.STEAM_ACCOUNT_PASSWORD }}

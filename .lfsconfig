@@ -1,3 +1,5 @@
 [remote "origin"]
     lfsurl = https://serverless-git-lfs.now.sh/ciberusgg/dota-underlords-staging
+[remote "publisher"]
+    lfsurl = https://serverless-git-lfs.now.sh/ciberusgg/dota-underlords-staging
     

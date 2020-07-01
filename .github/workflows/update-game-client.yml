@@ -19,6 +19,9 @@ jobs:
         with:
           token: ${{ secrets.REPOSITORY_GITHUB_TOKEN }}
 
+      - name: copy random file
+        run: cp test.png test${{ github.run_number }}.png
+
       - uses: invisionapp/private-action-loader@v3
         id: output_example
         name: Update game client & push

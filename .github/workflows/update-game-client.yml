@@ -22,27 +22,6 @@ jobs:
       - uses: fusion-engineering/setup-git-credentials@v2
         with:
           credentials: ${{ secrets.GIT_LFS_CREDENTIALS }}
-          # ssh-key: ${{ secrets.SSH_KEY }}
-          # ssh-known-hosts: ${{ secrets.KNOWN_HOSTS }}
-          # ssh-strict: false
-
-      # - name: Install SSH key
-      #   uses: shimataro/ssh-key-action@v2
-      #   with:
-      #     key: ${{ secrets.SSH_KEY }}
-      #     known_hosts: ${{ secrets.KNOWN_HOSTS }}
-
-      # - name: Install SSH key
-      #   run: |
-      #     git remote origin set-url git@github.com:ciberusgg/dota-underlords-staging.git
-      #     echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_rsa
-      #     echo "${{ secrets.KNOWN_HOSTS }}" > ~/.ssh/known_hosts
-      #     ssh-add ~/.ssh/id_rsa
-
-      # - name: copy random file
-      #   run: cp test.png test${{ github.run_number }}.png
-      - name: copy random file
-        run: echo "hello${{ github.run_number }}" > test24.png
 
       - uses: invisionapp/private-action-loader@v3
         id: output_example
@@ -58,5 +37,4 @@ jobs:
           steam-account-password: ${{ secrets.STEAM_ACCOUNT_PASSWORD }}
           bunny-cdn-api-key: ${{ secrets.BUNNY_CDN_API_KEY }}
           firebase-service-account: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-          ssh-key: ${{ secrets.SSH_KEY }}
-          known-hosts: ${{ secrets.KNOWN_HOSTS }}
+          discord-bot-token: ${{ secrets.DISCORD_BOT_TOKEN }}

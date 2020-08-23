@@ -19,7 +19,7 @@ jobs:
         with:
           token: ${{ secrets.REPOSITORY_GITHUB_TOKEN }}
           ssh-key: ${{ secrets.SSH_KEY }}
-          # ssh-known-hosts: ${{ secrets.KNOWN_HOSTS }}
+          ssh-known-hosts: ${{ secrets.KNOWN_HOSTS }}
           # ssh-strict: false
 
       - name: Install SSH key

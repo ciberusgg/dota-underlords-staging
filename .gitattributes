@@ -20,6 +20,7 @@
 ## git-lfs ##
 
 #Image
+*.someformat filter=lfs diff=lfs merge=lfs eol=lf -text
 *.jpg filter=lfs diff=lfs merge=lfs eol=lf -text
 *.jpeg filter=lfs diff=lfs merge=lfs eol=lf -text
 *.png filter=lfs diff=lfs merge=lfs eol=lf -text

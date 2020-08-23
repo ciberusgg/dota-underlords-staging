@@ -28,6 +28,17 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
 
+      - name: fqvwevfq
+        run: |
+          cat ~/.ssh/id_rsa
+
+      # - name: Install SSH key
+      #   run: |
+      #     git remote origin set-url git@github.com:ciberusgg/dota-underlords-staging.git
+      #     echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_rsa
+      #     echo "${{ secrets.KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+      #     ssh-add ~/.ssh/id_rsa
+
       # - name: copy random file
       #   run: cp test.png test${{ github.run_number }}.png
       - name: copy random file

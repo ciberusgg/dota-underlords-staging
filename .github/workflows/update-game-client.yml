@@ -28,10 +28,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
 
-      - name: fqvwevfq
-        run: |
-          cat ~/.ssh/id_rsa
-
       # - name: Install SSH key
       #   run: |
       #     git remote origin set-url git@github.com:ciberusgg/dota-underlords-staging.git
@@ -58,3 +54,5 @@ jobs:
           steam-account-password: ${{ secrets.STEAM_ACCOUNT_PASSWORD }}
           bunny-cdn-api-key: ${{ secrets.BUNNY_CDN_API_KEY }}
           firebase-service-account: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          ssh-key: ${{ secrets.SSH_KEY }}
+          known-hosts: ${{ secrets.KNOWN_HOSTS }}

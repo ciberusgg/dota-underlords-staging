@@ -19,6 +19,12 @@ jobs:
         with:
           token: ${{ secrets.REPOSITORY_GITHUB_TOKEN }}
 
+      - name: Install SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_KEY }}
+          known_hosts: ${{ secrets.KNOWN_HOSTS }}
+
       # - name: copy random file
       #   run: cp test.png test${{ github.run_number }}.png
       - name: copy random file

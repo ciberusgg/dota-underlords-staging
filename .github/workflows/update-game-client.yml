@@ -17,9 +17,9 @@ jobs:
 
       - uses: actions/checkout@v2
         with:
-          # token: ${{ secrets.REPOSITORY_GITHUB_TOKEN }}
-          ssh-key: ${{ secrets.SSH_KEY }}
-          ssh-known-hosts: ${{ secrets.KNOWN_HOSTS }}
+          token: ${{ secrets.REPOSITORY_GITHUB_TOKEN }}
+          # ssh-key: ${{ secrets.SSH_KEY }}
+          # ssh-known-hosts: ${{ secrets.KNOWN_HOSTS }}
           # ssh-strict: false
 
       - name: Install SSH key

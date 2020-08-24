@@ -38,3 +38,4 @@ jobs:
           bunny-cdn-api-key: ${{ secrets.BUNNY_CDN_API_KEY }}
           firebase-service-account: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           discord-bot-token: ${{ secrets.DISCORD_BOT_TOKEN }}
+          staging: true

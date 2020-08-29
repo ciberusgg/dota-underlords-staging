@@ -1,7 +1,4 @@
- .private-action                       | 2 +-
- game/bin/win64/QtAssistantClient4.dll | 3 +++
- game/bin/win64/QtCLucene4.dll         | 3 +++
- game/bin/win64/QtDeclarative4.dll     | 3 +++
- game/dac_desktop/pak01_000.vpk        | 3 +++
- steamapps/appmanifest_1046930.acf     | 6 +++---
- 6 files changed, 16 insertions(+), 4 deletions(-)
+ .private-action                   | 2 +-
+ game/bin/win64/QtDeclarative4.dll | 3 +++
+ steamapps/appmanifest_1046930.acf | 2 +-
+ 3 files changed, 5 insertions(+), 2 deletions(-)

@@ -3,6 +3,9 @@
 .env.build
 node_modules/
 
-# steamcmd
 __steamcmd
 __steamcmd_linux.tar.gz
+__vrf
+__vpk
+__vpk-repository
+.private-action

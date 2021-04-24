@@ -13,6 +13,7 @@
 *.tga filter=lfs diff=lfs merge=lfs -text
 *.spr filter=lfs diff=lfs merge=lfs -text
 *.nod filter=lfs diff=lfs merge=lfs -text
+*.svg filter=lfs diff=lfs merge=lfs -text
 
 # Audio
 *.mp3 filter=lfs diff=lfs merge=lfs -text
@@ -75,7 +76,7 @@
 *.raw filter=lfs diff=lfs merge=lfs -text
 *.vtf.swatch filter=lfs diff=lfs merge=lfs -text
 *.mix filter=lfs diff=lfs merge=lfs -text
-
+*.gltf filter=lfs diff=lfs merge=lfs -text # too large for storing as non-binary
 *.a filter=lfs diff=lfs merge=lfs -text
 *.exr filter=lfs diff=lfs merge=lfs -text
 *.pdf filter=lfs diff=lfs merge=lfs -text
@@ -111,6 +112,17 @@
 *.vtx filter=lfs diff=lfs merge=lfs -text
 *.vcs filter=lfs diff=lfs merge=lfs -text
 *.vbf filter=lfs diff=lfs merge=lfs -text
+#
+*.vrman filter=lfs diff=lfs merge=lfs -text
+*.vcdlist filter=lfs diff=lfs merge=lfs -text
+*.vanim filter=lfs diff=lfs merge=lfs -text # too large for storing as non-binary
+*.vpcf filter=lfs diff=lfs merge=lfs -text # too large for storing as non-binary
+*.vmorf filter=lfs diff=lfs merge=lfs -text # too large for storing as non-binary
+*.vmat filter=lfs diff=lfs merge=lfs -text # too large for storing as non-binary
+*.vagrp filter=lfs diff=lfs merge=lfs -text # too large for storing as non-binary
+*.vphys filter=lfs diff=lfs merge=lfs -text # too large for storing as non-binary
+*.vseq filter=lfs diff=lfs merge=lfs -text # too large for storing as non-binary
+*.vmesh filter=lfs diff=lfs merge=lfs -text # too large for storing as non-binary
 
 # Fonts
 *.otf filter=lfs diff=lfs merge=lfs -text
